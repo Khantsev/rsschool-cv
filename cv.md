@@ -36,7 +36,7 @@ function multiply(a, b) {
 
 ## PROJECTS
 
-* Curriculum vitae — [Markdown version](#)
+* Curriculum vitae — [Markdown version](https://khantsev.github.io/rsschool-cv/cv)
 * Curriculum vitae — [HTML,CSS version](#)
 
 ## EDUCATION
