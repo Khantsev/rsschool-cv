@@ -31,6 +31,11 @@ h3 {
   margin: 0 auto;
 }
 
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -51,4 +56,14 @@ h3 {
 .nav-link:hover {
   color: #555555;
   border-bottom: 2px solid #555555;
+}
+
+.section {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
