@@ -59,6 +59,17 @@ h3 {
   color: #222222;
 }
 
+a {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  color: #555555;
+}
+.link-selection {
+  font-weight: 500;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -75,4 +86,8 @@ h3 {
   .section {
     width: 100%;
   }
+}
+.section-list {
+  padding-left: 15px;
+  list-style-type: square;
 }
