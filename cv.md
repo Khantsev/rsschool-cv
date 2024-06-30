@@ -26,7 +26,7 @@ return a * b
 
 ## Experience
 
-RS School –– [CV](https://Khantsev.github.io/rsschool-cv/cv)
+RS School – [CV](https://Khantsev.github.io/rsschool-cv/cv)
 
 ## Education 
 
