@@ -158,14 +158,14 @@ body {
   gap: 20px;
 }
 
-.footer-link {
+.github-link {
   font-weight: 500;
   color: #FCFDFF;
   text-decoration: none;
   transition: color 1s;
 }
 
-.footer-link:hover {
+.github-link:hover {
   color: #495B71;
 }
 
