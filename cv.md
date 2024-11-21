@@ -5,8 +5,8 @@
 ## Contacts
 
 * Kyiv, Ukraine
-* Github: [Khantsev](https://github.com/Khantsev)
-* Discord: [@Khantsev#8537](https://discord.com/)
+* Github: [__Khantsev__](https://github.com/Khantsev)
+* Discord: [__@Khantsev#8537__](https://discord.com/)
 
 
 ## Summary 
