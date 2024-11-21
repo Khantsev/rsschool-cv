@@ -6,4 +6,4 @@
 
 * Kyiv, Ukraine
 * Github: [Khantsev](https://github.com/Khantsev)
-* Discord: [@khantsev](https://discord.com/)
+* Discord: [@Khantsev#8537](https://discord.com/)
