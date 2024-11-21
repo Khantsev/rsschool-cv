@@ -18,6 +18,6 @@ Started getting acquainted with this craft out of interest. Then it grew into a 
 
 ## Skills
 
-* Web-development: Markdown, HTML5, CSS3
-* Version control: GIT, Github
-* Graphics: Figma
+* Web-development: __Markdown, HTML5, CSS3__
+* Version control: __GIT, Github__
+* Graphics: __Figma__
