@@ -21,3 +21,16 @@ Started getting acquainted with this craft out of interest. Then it grew into a 
 * Web-development: __Markdown, HTML5, CSS3__
 * Version control: __GIT, Github__
 * Graphics: __Figma__
+
+
+## Code
+
+```
+
+let country = 'Ukraine';
+country = 'Poland'
+
+console.log(country);
+
+
+```
