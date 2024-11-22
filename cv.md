@@ -50,3 +50,8 @@ console.log(country);
 ## Education
 
 Kyiv National University of Technology and Design
+
+
+## English 
+
+A1 - Beginner
