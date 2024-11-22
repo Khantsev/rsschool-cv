@@ -45,3 +45,8 @@ console.log(country);
 ## Projects
 
 [__CV#1. Markdown & Git__](https://Khantsev.github.io/rsschool-cv/cv)
+
+
+## Education
+
+Kyiv National University of Technology and Design
