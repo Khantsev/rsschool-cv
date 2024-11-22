@@ -40,3 +40,8 @@ console.log(country);
 * Code Basics - __HTML__
 * Code Basics - __CSS__
 * Hexlet - __GIT, Github__
+
+
+## Projects
+
+[__CV#1. Markdown & Git__](https://Khantsev.github.io/rsschool-cv/cv)
