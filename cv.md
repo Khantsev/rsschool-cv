@@ -34,3 +34,10 @@ console.log(country);
 
 
 ```
+
+## Courses
+
+* Hexlet - __Markdown__
+* Code Basics - __HTML__
+* Code Basics - __CSS__
+* Hexlet - __GIT, Github__
