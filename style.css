@@ -60,9 +60,35 @@ body {
 
 .profession-text {
     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #30352E;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* Profile */
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+}
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    filter: contrast(60%);
+}
+.profile-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #30352E;
 }
