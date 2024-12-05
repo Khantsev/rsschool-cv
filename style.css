@@ -63,9 +63,9 @@ body {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
+    text-align: center;
     color: #30352E;
     text-transform: uppercase;
-    text-align: center;
 }
 
 /* Profile */
@@ -78,6 +78,7 @@ body {
     padding: 20px 0;
     background-color: #f7f7f7;
 }
+
 .profile-avatar {
     width: 200px;
     height: 200px;
@@ -85,10 +86,41 @@ body {
     object-fit: cover;
     filter: contrast(60%);
 }
+
 .profile-title {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     font-weight: 200;
     letter-spacing: 1px;
+    text-align: center;
+    color: #30352E;
+}
+
+/* Contacts */
+.section {
+    padding: 0 20px;
+}
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.section-list{
+    margin: 0;
+    padding: 0 30px;
+    list-style: square;
+}
+.section-item {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.section-link {
+    color: #B4B198;
+    text-decoration: none;
+    transition: color 1s;
+}
+.section-link:hover {
     color: #30352E;
 }
