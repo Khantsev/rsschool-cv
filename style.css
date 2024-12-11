@@ -169,6 +169,77 @@ body {
     margin: 0;
     padding: 0 0 0 25px;
 }
+
 .code-demonstration {
     font-family: "Fira Code", serif;
+}
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #889687;
+}
+
+@media(max-width: 320px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.copyright {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.github-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f7f7f7;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.github-link:hover {
+    color: #30352E;
+}
+
+.app-year {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.rsschool-link {
+    transition: filter 0.5s;
+}
+
+.rsschool-link:hover {
+    filter: blur(1px);
+}
+
+.rsschool-logo {
+    width: 200px;
+}
+
+@media(max-width: 320px) {
+    .rsschool-logo {
+        width: 100px;
+    }
 }
