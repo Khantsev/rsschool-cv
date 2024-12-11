@@ -27,7 +27,7 @@ Started getting acquainted with this craft out of interest. Then it grew into a 
 ```
 
 let country = 'Ukraine';
-country = 'Poland'
+country = 'Poland';
 
 console.log(country);
 
