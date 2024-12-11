@@ -20,6 +20,21 @@ body {
     margin: 0 auto;
 }
 
+/* CV logo */
+
+.cv-logo {
+    width: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cv-logo-link {
+    transition: filter 0.5s;
+}
+
+.cv-logo-link:hover {
+    filter: blur(1px);
+}
+
 /* Navigation */
 .nav-list {
     display: flex;
