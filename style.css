@@ -124,6 +124,7 @@ body {
 }
 
 .section-title {
+    margin: 20px 0;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -158,14 +159,16 @@ body {
 }
 
 .section-paragraph {
+    margin: 0 0 15px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #000000;
 }
 
-/* Summary */
-
-.summary-paragraph {
-    margin-top: 0;
-
+.code-demonstration-wrapper {
+    margin: 0;
+    padding: 0 0 0 30px;
+}
+.code-demonstration {
+    font-family: "Fira Code", serif;
 }
