@@ -109,12 +109,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 20px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
+    padding: 20px;
+    
 }
 
 .section {
     width: calc(50% - 10px);
     padding: 10px 10px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media(max-width: 768px) {
@@ -186,7 +189,7 @@ body {
 
 @media(max-width: 320px) {
     .footer-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
     }
 }
@@ -205,6 +208,18 @@ body {
     color: #000000;
 }
 
+@keyframes color-change {
+    0% {
+        color: #f7f7f7;
+    }
+    50% {
+        color: #B4B198;
+    }
+    100% {
+        color: #f7f7f7;
+    }
+}
+
 .github-link {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -212,11 +227,13 @@ body {
     letter-spacing: 1px;
     color: #f7f7f7;
     text-decoration: none;
+    animation: color-change 10s infinite;
     transition: color 1s;
 }
 
 .github-link:hover {
     color: #30352E;
+    animation: none;
 }
 
 .app-year {
