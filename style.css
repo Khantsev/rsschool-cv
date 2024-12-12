@@ -126,7 +126,7 @@ body {
     row-gap: 20px;
     /* padding: 0 20px; */
     padding: 20px;
-    
+
 }
 
 .section {
@@ -211,66 +211,54 @@ body {
 
 .footer-wrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
+.app-year,
 .copyright {
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
-    color: #000000;
+    color: #30352E;
 }
 
 @keyframes color-change {
     0% {
-        color: #f7f7f7;
+        color: #30352E;
     }
+
     50% {
         color: #B4B198;
     }
+
     100% {
-        color: #f7f7f7;
+        color: #30352E;
     }
 }
 
-.github-link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #f7f7f7;
-    text-decoration: none;
-    animation: color-change 10s infinite;
-    transition: color 1s;
-}
-
-.github-link:hover {
+.github-logo,.rsschool-logo {
+    width: 100px;
     color: #30352E;
-    animation: none;
-}
-
-.app-year {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000000;
-}
-
-.rsschool-link {
+    animation: color-change 30s ease-in-out;
     transition: filter 0.5s;
-}
-
-.rsschool-link:hover {
-    filter: blur(1px);
 }
 
 .rsschool-logo {
     width: 200px;
 }
 
+.github-logo:hover,
+.rsschool-logo:hover {
+    filter: blur(1px);
+    animation: none;
+}
+
 @media(max-width: 320px) {
+    .github-logo {
+        width: 50px;
+    }
+
     .rsschool-logo {
         width: 100px;
     }
