@@ -20,22 +20,12 @@ body {
     margin: 0 auto;
 }
 
-/* CV logo */
+/* - - - - - */
 
-.cv-logo {
-    width: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
 
-.cv-logo-link {
-    transition: filter 0.5s;
-}
+/* ***** HEADER ***** */
 
-.cv-logo-link:hover {
-    filter: blur(1px);
-}
-
-/* Navigation */
+/* Navigation, CV logo */
 .nav-list {
     display: flex;
     justify-content: center;
@@ -48,9 +38,46 @@ body {
     background-color: #889687;
 }
 
+@media(max-width: 768px) {
+    .nav-list {
+        gap: 0;
+        row-gap: 20px;
+    }
+}
+
 @media(max-width: 320px) {
     .nav-list {
         flex-direction: column;
+    }
+}
+
+@keyframes cv-logo-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cv-logo {
+    width: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    animation: cv-logo-rotate 7s ease-in-out;
+    transition: filter 0.5s;
+}
+
+.cv-logo:hover {
+    filter: blur(1px);
+    animation: none;
+}
+
+@media(max-width: 768px) {
+    .nav-item {
+        flex: 1 1 20%;
+        box-sizing: border-box;
+        text-align: center;
     }
 }
 
@@ -67,6 +94,8 @@ body {
 .nav-link:hover {
     color: #30352E;
 }
+
+/* - - - - - */
 
 /* Profession */
 
@@ -88,6 +117,8 @@ body {
     color: #30352E;
     text-transform: uppercase;
 }
+
+/* - - - - - */
 
 /* Profile */
 
@@ -117,6 +148,11 @@ body {
     color: #30352E;
 }
 
+/* - - - - - */
+/* - - - - - */
+
+/* ***** MAIN ***** */
+
 /* General properties sections */
 
 .section-container {
@@ -124,20 +160,31 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 20px;
-    /* padding: 0 20px; */
     padding: 20px;
+}
 
+@media(max-width: 320px) {
+    .section-container {
+        gap: 0;
+    }
 }
 
 .section {
     width: calc(50% - 10px);
     padding: 10px 10px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
 @media(max-width: 768px) {
     .section {
         width: 100%;
+    }
+}
+
+@media(max-width: 320px) {
+    .section {
+        box-shadow: none;
     }
 }
 
@@ -151,15 +198,52 @@ body {
 }
 
 .section-list {
-    margin: 0;
-    padding: 0 0 0 30px;
-    list-style: square;
+    list-style: none;
+    padding: 0 0 0 16px;
 }
 
 .section-item {
+    position: relative;
+    padding: 0 0 0 14px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #000000;
+}
+
+.section-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #889687;
+    border-radius: 20%;
+}
+
+@keyframes appearance-disappearance-ukraine-logo {
+    0% {
+        background: none;
+    }
+
+    50% {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to bottom, #e9f3fb 50%, #fff5e7 50%);
+        border-radius: 3px;
+    }
+
+    100% {
+        background: none;
+    }
+}
+
+.ukraine-logo-animation {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    animation: appearance-disappearance-ukraine-logo 8.5s ease-in-out;
 }
 
 .section-link {
@@ -192,7 +276,10 @@ body {
     font-family: "Fira Code", serif;
 }
 
-/* Footer */
+/* - - - - - */
+/* - - - - - */
+
+/* ***** FOOTER ***** */
 
 .footer-container {
     display: flex;
@@ -200,6 +287,13 @@ body {
     align-items: center;
     padding: 20px 0;
     background-color: #889687;
+}
+
+@media(max-width: 768px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
 }
 
 @media(max-width: 320px) {
@@ -223,7 +317,7 @@ body {
     color: #30352E;
 }
 
-@keyframes color-change {
+@keyframes logo-color-change {
     0% {
         color: #30352E;
     }
@@ -237,10 +331,11 @@ body {
     }
 }
 
-.github-logo,.rsschool-logo {
+.github-logo,
+.rsschool-logo {
     width: 100px;
     color: #30352E;
-    animation: color-change 30s ease-in-out;
+    animation: logo-color-change 30s ease-in-out;
     transition: filter 0.5s;
 }
 
