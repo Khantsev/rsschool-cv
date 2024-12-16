@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* - - - - - */
+
+
+/* ***** HEADER ***** */
+
+/* Navigation, CV logo */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #889687;
+}
+
+@media(max-width: 768px) {
+    .nav-list {
+        gap: 0;
+        row-gap: 20px;
+    }
+}
+
+@media(max-width: 320px) {
+    .nav-list {
+        flex-direction: column;
+    }
+}
+
+@keyframes cv-logo-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cv-logo {
+    width: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    animation: cv-logo-rotate 7s ease-in-out;
+    transition: filter 0.5s;
+}
+
+.cv-logo:hover {
+    filter: blur(1px);
+    animation: none;
+}
+
+@media(max-width: 768px) {
+    .nav-item {
+        flex: 1 1 20%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f7f7f7;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.nav-link:hover {
+    color: #30352E;
+}
+
+/* - - - - - */
+
+/* Profession */
+
+.profession-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #B4B198;
+}
+
+.profession-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #30352E;
+    text-transform: uppercase;
+}
+
+/* - - - - - */
+
+/* Profile */
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+}
+
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    filter: contrast(60%);
+}
+
+.profile-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #30352E;
+}
+
+/* - - - - - */
+/* - - - - - */
+
+/* ***** MAIN ***** */
+
+/* General properties sections */
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+@media(max-width: 320px) {
+    .section-container {
+        gap: 0;
+    }
+}
+
+.section {
+    width: calc(50% - 10px);
+    padding: 10px 10px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+@media(max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px) {
+    .section {
+        box-shadow: none;
+    }
+}
+
+.section-title {
+    margin: 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #30352E;
+}
+
+.section-list {
+    list-style: none;
+    padding: 0 0 0 16px;
+}
+
+.section-item {
+    position: relative;
+    padding: 0 0 0 14px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.section-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #889687;
+    border-radius: 20%;
+}
+
+@keyframes appearance-disappearance-ukraine-logo {
+    0% {
+        background: none;
+    }
+
+    50% {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to bottom, #e9f3fb 50%, #fff5e7 50%);
+        border-radius: 3px;
+    }
+
+    100% {
+        background: none;
+    }
+}
+
+.ukraine-logo-animation {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    animation: appearance-disappearance-ukraine-logo 8.5s ease-in-out;
+}
+
+.section-link {
+    color: #B4B198;
+    text-decoration: none;
+    transition: filter 0.5s;
+}
+
+.section-link:hover {
+    filter: blur(1px);
+}
+
+.section-highlight {
+    font-weight: 600;
+}
+
+.section-paragraph {
+    margin: 0 0 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.code-demonstration-wrapper {
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+
+.code-demonstration {
+    font-family: "Fira Code", serif;
+}
+
+/* - - - - - */
+/* - - - - - */
+
+/* ***** FOOTER ***** */
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #889687;
+}
+
+@media(max-width: 768px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-year,
+.copyright {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #30352E;
+}
+
+@keyframes logo-color-change {
+    0% {
+        color: #30352E;
+    }
+
+    50% {
+        color: #B4B198;
+    }
+
+    100% {
+        color: #30352E;
+    }
+}
+
+.github-logo,
+.rsschool-logo {
+    width: 100px;
+    color: #30352E;
+    animation: logo-color-change 30s ease-in-out;
+    transition: filter 0.5s;
+}
+
+.rsschool-logo {
+    width: 200px;
+}
+
+.github-logo:hover,
+.rsschool-logo:hover {
+    filter: blur(1px);
+    animation: none;
+}
+
+@media(max-width: 320px) {
+    .github-logo {
+        width: 50px;
+    }
+
+    .rsschool-logo {
+        width: 100px;
+    }
+}
