@@ -1,7 +1,7 @@
 # Project CV
 
 <picture>
-	<source media="(prefers-color-scheme: dark)" srcset="/assets/img/rs-color-scheme-light-logo.png">
+	<source media="(prefers-color-scheme: dark)" srcset="/assets/img/rs-color-scheme-dark-logo.png">
 	<source media="(prefers-color-scheme: light)" srcset="assets/img/rs-color-scheme-light-logo.png">
 	<img src="/assets/img/rs-school-logo.png" alt="The Rolling Scopes School">
 </picture>
