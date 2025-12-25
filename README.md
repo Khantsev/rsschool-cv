@@ -13,3 +13,11 @@ Your task is to set up the repository according to the requirements, add your CV
 Task: [CV](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/git-markdown.md#cv1-markdown--git)
 
 Deploy: [Markdown](https://Khantsev.github.io/rsschool-cv/cv)
+
+## HTML, CSS & Git Basics
+
+Your task is to create a branch rsschool-cv-html from the gh-pages branch in the rsschool-cv repository, add the files index.html and style.css containing basic empty templates or templates with minimal content (the CV layout and styling will be done in the next task), and deploy them to GitHub Pages.
+
+Task: [CV](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/html-css-git.md)
+
+Deploy: [Layout](https://khantsev.github.io/rsschool-cv/)
