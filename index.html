@@ -5,16 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cv</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="icon" type="image/svg+xml" href="assets/icon/favicon.svg">
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <!-- Navigation -->
+    <div class="container header-container">
+      <!-- ----- Navigation ----- -->
       <nav class="header__nav">
+
+        <!-- Mobile menu -->
+        <input type="checkbox" class="mobile__nav-checkbox" id="btn">
+        <label for="btn" class="mobile__nav-btn">☰</label>
+        <!--  -->
+
+        <!-- Desktop menu -->
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <img src="assets/img/logo.svg" alt="Logo" class="header__nav-logo">
@@ -23,10 +31,10 @@
             <a href="#contact" class="header__nav-link">Contact</a>
           </li>
           <li class="header__nav-item">
-            <a href="#about" class="header__nav-link">About</a>
+            <a href="#skills" class="header__nav-link">Skills</a>
           </li>
           <li class="header__nav-item">
-            <a href="#skills" class="header__nav-link">Skills</a>
+            <a href="#about" class="header__nav-link">About</a>
           </li>
           <li class="header__nav-item">
             <a href="#code" class="header__nav-link">Code</a>
@@ -45,20 +53,92 @@
           </li>
         </ul>
       </nav>
-      <!-- -->
-
-      <!-- Profile -->
-      <div class="header__profile">
-        <img src="assets/img/user-picture.png" alt="User picture" class="header__profile-img">
-        <div class="header__profile-inner">
-          <h1 class="header__profile-title">Yevhen Khantsev</h1>
-          <span class="header__profile-subtitle">Junior Front-End JavaScript Developer</span>
-        </div>
-      </div>
-      <!-- -->
+      <!-- ----- ----- -->
     </div>
   </header>
-  <main class="main"></main>
+
+  <main class="main">
+    <div class="container main-container">
+
+      <!-- ----- Section Profile ----- -->
+      <div class="block block__profile">
+        <img src="assets/img/user-picture.png" alt="User picture" class="block__profile-img">
+      </div>
+      <section class="section section__profile-block">
+        <div class="block__profile-inner">
+          <h1 class="block__profile-title">Yevhen Khantsev</h1>
+          <span class="block__profile-subtitle">Junior Front-End JavaScript Developer</span>
+        </div>
+      </section>
+      <!-- ----- ----- -->
+
+      <!-- ----- Section Contact ----- -->
+      <section class="section section__contact" id="contact">
+        <h2 class="section-title">Contact info</h2>
+        <p class="section-paragraph">New York, United States</p>
+        <!-- -- Dropdown list -- -->
+        <details class="section__contact-dropdown">
+          <summary class="section__contact-dropdown-title">SNS</summary>
+          <ul class="section__contact-dropdown-list">
+            <li class="section-item">LinkedIn:
+              <a href="https://www.linkedin.com/in/khantsev/" target="_blank"
+                class="section__contact-dropdown-link">Khantsev</a>
+            </li>
+            <li class="section-item">Github:
+              <a href="https://github.com/Khantsev" target="_blank" class="section__contact-dropdown-link">Khantsev</a>
+            </li>
+            <li class="section-item">Discord:
+              <a href="https://discord.com/users/981249567339200572" target="_blank"
+                class="section__contact-dropdown-link">@khantsev</a>
+            </li>
+          </ul>
+        </details>
+        <!-- -- -- -->
+      </section>
+      <!-- ----- ----- -->
+
+      <!-- ----- Section Skills ----- -->
+      <section class="section section__skills" id="skills">
+        <h2 class="section-title">Core Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            Web-development: HTML5, CSS3, JavaScript(ES6+), Markdown
+          </li>
+          <li class="section-item">
+            Version control: Git, GitHub
+          </li>
+          <li class="section-item">
+            Graphics: Figma
+          </li>
+        </ul>
+      </section>
+      <!-- ----- ----- -->
+
+      <!-- ----- Section About ----- -->
+      <section class="section section__about" id="about">
+        <h2 class="section-title">About</h2>
+        <p class="section-paragraph section__about-paragraph">Junior Web Developer with a focus on frontend development.
+          Frontend is
+          viewed as a combination of an
+          engineering approach and digital creativity, where results directly impact user experience and the
+          business
+          value of a product.
+        </p>
+        <p class="section-paragraph section__about-paragraph">
+          Technical background with Bachelor’s and Master’s degrees. Professional skills are actively being developed
+          through training at The Rolling Scopes School, with a strong focus on modern frontend technologies and best
+          development practices.
+        </p>
+        <p class="section-paragraph section__about-paragraph">
+          Strong orientation toward continuous learning, skill improvement, and practical application of acquired
+          knowledge in real-world projects.
+        </p>
+      </section>
+      <!-- ----- ----- -->
+
+    </div>
+  </main>
+
   <footer class="footer"></footer>
 </body>
 
