@@ -7,6 +7,7 @@
   --color__global-link: #0066cc;
   --color__global-title: #1d1d1f;
   --color__global-subtitle: #6e6e73;
+  --color__global-item-highlight: #6e6e73;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
   background-color: #ffffff;
 }
 
-/* ***** Container ***** */
+/* Container */
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -43,9 +44,9 @@ body {
   row-gap: 2.12rem;
   padding: 2.12rem 1.25rem 0;
 }
-/* ***** ***** */
+/* */
 
-/* ***** Section ***** */
+/* Section */
 .section,
 .block {
   padding: 2.12rem 1.25rem;
@@ -76,9 +77,9 @@ body {
   line-height: 1.6;
   list-style: none;
 }
-/* ***** ***** */
+/* */
 
-/* *-*-*-*-*  Header *-*-*-*-* */
+/* *--* Header *--* */
 
 .header {
   background-color: #f5f5f7;
@@ -92,7 +93,7 @@ body {
   width: 1.25rem;
 }
 
-/* ***** Navigation ***** */
+/* Navigation */
 .header__nav-list {
   display: flex;
   gap: 1.25rem;
@@ -115,11 +116,12 @@ body {
 .header__nav-link:hover {
   color: var(--hover__nav-link);
 }
-/* *-*-*-*-* *-*-*-*-* */
+/* *-* */
+/* *--* */
 
-/* *-*-*-*-* Main *-*-*-*-* */
+/* *--* Main *--* */
 
-/* ***** Section Profile ***** */
+/* *-* Section Profile *-* */
 .block__profile,
 .section__profile-block {
   display: flex;
@@ -151,15 +153,15 @@ body {
   text-align: center;
   color: var(--color__global-subtitle);
 }
-/* ***** ***** */
+/* *-* */
 
-/* ***** Section Contact ***** */
+/* *-* Section Contact *-* */
 .section__contact {
   height: auto;
   background-color: #f5f5f7;
   border-radius: 28px;
 }
-/* ** Dropdown list ** */
+/* Dropdown list */
 .section__contact-dropdown-title {
   font-family: var(--font__global);
   font-size: 3rem;
@@ -174,16 +176,20 @@ body {
   color: #0066cc;
   text-decoration: none;
 }
-/* ***** ***** */
+/* */
+/* *-* */
 
-/* ***** Section Skills ***** */
+/* *-* Section Skills *-* */
 .section__skills {
   border: 1px solid #f5f5f7;
   border-radius: 28px;
 }
-/* ***** ***** */
+.section-item-highlight {
+  color: var(--color__global-item-highlight);
+}
+/* *-* */
 
-/* ***** Section About ***** */
+/* *-* Section About *-* */
 .section__about {
   width: 100%;
   padding: 0 1.25rem;
@@ -198,5 +204,27 @@ body {
   margin: 1.18rem 0 0;
   line-height: 1.4;
 }
-/* ***** ***** */
-/* *-*-*-*-* *-*-*-*-* */
+/* Quote */
+.section__about-quote {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2.18rem 0 0;
+  padding: 0 0 0 0.93rem;
+}
+.section__about-quote-line {
+  display: block;
+  width: 1.25rem;
+  height: 2.5rem;
+  background-color: #f5f5f7;
+  border-radius: 28px;
+}
+.section-paragraph.quote-text {
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: var(--color__global-subtitle);
+}
+/* */
+/* *-* */
+/* *--* */
