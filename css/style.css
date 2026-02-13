@@ -49,7 +49,8 @@ body {
 /* Section */
 .section,
 .block {
-  padding: 2.12rem 1.25rem;
+  /* padding: 2.12rem 1.25rem; */
+  padding: 0 1.25rem;
   width: 45%;
 }
 .section-title {
@@ -66,16 +67,24 @@ body {
   font-weight: 400;
 }
 .section-list {
-  margin: 0.62rem 0;
+  margin: 0;
   padding: 0 0 0 0.93rem;
 }
 .section-item {
-  margin: 0.62rem 0;
+  margin: 0.62rem 0 0;
   font-family: var(--font__global);
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.6;
   list-style: none;
+}
+.section-item-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+.section__contact,
+.section__skills {
+  padding: 2.12rem 1.25rem;
 }
 /* */
 
@@ -171,11 +180,6 @@ body {
 .section__contact-dropdown-item {
   list-style: none;
 }
-.section__contact-dropdown-link {
-  font-size: 1.06rem;
-  color: #0066cc;
-  text-decoration: none;
-}
 /* */
 /* *-* */
 
@@ -192,7 +196,6 @@ body {
 /* *-* Section About *-* */
 .section__about {
   width: 100%;
-  padding: 0 1.25rem;
 }
 .section__about-title {
   margin: 0;
@@ -220,6 +223,7 @@ body {
   border-radius: 28px;
 }
 .section-paragraph.quote-text {
+  margin: 0;
   font-style: italic;
   font-weight: 300;
   letter-spacing: 0.05rem;
