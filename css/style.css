@@ -49,9 +49,8 @@ body {
 /* Section */
 .section,
 .block {
-  /* padding: 2.12rem 1.25rem; */
-  padding: 0 1.25rem;
   width: 45%;
+  padding: 0 1.25rem;
 }
 .section-title {
   margin: 0;
@@ -74,9 +73,12 @@ body {
   margin: 0.62rem 0 0;
   font-family: var(--font__global);
   font-size: 1.25rem;
-  font-weight: 400;
   line-height: 1.6;
+  font-weight: 400;
   list-style: none;
+}
+.section-item:first-child {
+  margin: 1.18rem 0 0;
 }
 .section-item-link {
   color: #0066cc;
@@ -177,9 +179,6 @@ body {
   font-weight: 600;
   color: var(--color__global-subtitle);
 }
-.section__contact-dropdown-item {
-  list-style: none;
-}
 /* */
 /* *-* */
 
@@ -230,5 +229,23 @@ body {
   color: var(--color__global-subtitle);
 }
 /* */
+/* *-* */
+
+/* *-* Section Code *-* */
+.section__code-title {
+  margin: 2.12rem 0 0;
+}
+.section__code-wrapper {
+  display: block;
+  margin: 1.18rem 0 0;
+  padding: 0 0 0 0.93rem;
+}
+.section__code-example {
+  font-family: var(--font__global);
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: var(--color__global-item-highlight);
+}
 /* *-* */
 /* *--* */
