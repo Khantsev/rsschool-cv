@@ -1,0 +1,302 @@
+/* 
+  Project: CV (The Rolling Scopes School)
+  Developer: Yevhen Khantsev
+  LinkedIn: https://www.linkedin.com/in/khantsev/
+  GitHub: https://github.com/Khantsev
+  Discord: @khantsev
+*/
+
+/* \ DESKTOP VERSION / */
+
+:root {
+  --font__global: Helvetica, Arial, sans-serif;
+  --color__nav-link: rgba(0, 0, 0, 0.8);
+  --hover__nav-link: #000000;
+  --color__global-link: #0066cc;
+  --color__global-title: #1d1d1f;
+  --color__global-subtitle: #6e6e73;
+  --color__global-item-highlight: #6e6e73;
+  --color__footer: #6e6e73;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 16px */
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+.header-container {
+  padding: 0;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2.12rem;
+  padding: 2.12rem 1.25rem;
+}
+/* */
+
+/* Section */
+.section,
+.block {
+  width: 45%;
+  padding: 0 1.25rem;
+}
+.section-title {
+  margin: 0;
+  font-family: var(--font__global);
+  font-size: 3.75rem;
+  font-weight: 600;
+  color: var(--color__global-title);
+}
+.section-paragraph {
+  margin: 1.18rem 0 0;
+  font-family: var(--font__global);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.section-list {
+  margin: 0;
+  padding: 0 0 0 0.93rem;
+}
+.section-item {
+  margin: 0.62rem 0 0;
+  font-family: var(--font__global);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 400;
+  list-style: none;
+}
+.section-item:first-child {
+  margin: 1.18rem 0 0;
+}
+.section-item-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+.section__contact,
+.section__skills {
+  padding: 2.12rem 1.25rem;
+}
+/* */
+
+/* *--* Header *--* */
+
+.header {
+  background-color: #f5f5f7;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+}
+.header__nav-logo {
+  display: block;
+  width: 1.25rem;
+}
+
+/* Navigation */
+.header__nav-list {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  height: 2.75rem;
+  margin: 0;
+  padding: 0;
+}
+.header__nav-item {
+  font-family: var(--font__global);
+  font-size: 0.75rem;
+  font-weight: 400;
+  list-style: none;
+}
+.header__nav-link {
+  color: var(--color__nav-link);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.header__nav-link:hover {
+  color: var(--hover__nav-link);
+}
+/* *-* */
+/* *--* */
+
+/* *--* Main *--* */
+
+/* *-* Section Profile *-* */
+.block__profile,
+.section__profile-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+.section__profile-block {
+  justify-content: space-between;
+}
+.block__profile-title {
+  margin: 0;
+  font-family: var(--font__global);
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color__global-title);
+}
+.block__profile-img {
+  width: 14.43rem;
+  height: 14.56rem;
+}
+.block__profile-subtitle {
+  display: block;
+  font-family: var(--font__global);
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color__global-subtitle);
+}
+/* *-* */
+
+/* *-* Section Contact *-* */
+.section__contact {
+  height: auto;
+  background-color: #f5f5f7;
+  border-radius: 28px;
+}
+.section__contact-paragraph {
+  margin: 1.18rem 0;
+}
+/* Dropdown list */
+.section__contact-dropdown-title {
+  font-family: var(--font__global);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color__global-subtitle);
+}
+/* */
+/* *-* */
+
+/* *-* Section Skills *-* */
+.section__skills {
+  border: 1px solid #f5f5f7;
+  border-radius: 28px;
+}
+.section-item-highlight {
+  color: var(--color__global-item-highlight);
+}
+/* *-* */
+
+/* *-* Section About *-* */
+.section__about {
+  width: 100%;
+}
+.section__about-title {
+  margin: 0;
+  font-family: var(--font__global);
+  font-size: 4rem;
+  font-weight: 600;
+}
+/* Quote */
+.section__about-quote {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2.18rem 0 0;
+  padding: 0 0 0 0.93rem;
+}
+.section__about-quote-line {
+  display: block;
+  width: 1.25rem;
+  height: 2.5rem;
+  background-color: #f5f5f7;
+  border-radius: 28px;
+}
+.section-paragraph.quote-text {
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: var(--color__global-subtitle);
+}
+/* */
+/* *-* */
+
+/* *-* Section Code *-* */
+.section__code-title {
+  margin: 2.12rem 0 0;
+}
+.section__code-wrapper {
+  display: block;
+  margin: 1.18rem 0 0;
+  padding: 0 0 0 0.93rem;
+}
+.section__code-example {
+  font-family: var(--font__global);
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: var(--color__global-item-highlight);
+}
+/* *-* */
+/* *--* */
+
+/* *--* Footer *--* */
+.footer-line {
+  border-bottom: 1px #f5f5f7 solid;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.copyright,
+.footer__banner-link {
+  font-family: var(--font__global);
+  font-size: 0.87rem;
+  color: var(--color__footer);
+}
+.footer__banner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer__banner-link {
+  text-decoration: none;
+}
+.footer__banner-link-box {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+  transition: filter 0.3s ease-in-out;
+}
+.github__banner-img {
+  width: 3rem;
+}
+.rs-school__banner-img {
+  width: 4rem;
+}
+.footer__banner-link-link:hover,
+.footer__banner-link-box:hover {
+  filter: brightness(0.5);
+}
+/* *--* */

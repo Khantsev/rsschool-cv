@@ -21,3 +21,20 @@ Your task is to create a branch rsschool-cv-html from the gh-pages branch in the
 Task: [CV](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/html-css-git.md)
 
 Deploy: [Layout](https://khantsev.github.io/rsschool-cv/)
+
+## Cross-Check
+
+In this stage, the task is to develop a CV web page. The core content should be based on the data you previously added to the Markdown document during the [Markdown & Git](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/git-markdown.md) task. This information can be modified, expanded, or edited as needed.
+In addition to the text, you must include a photo or an avatar on the page.
+
+Task: [CV](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv-stage0.md)
+
+Deploy: [Layout](https://khantsev.github.io/rsschool-cv/)
+
+## Author
+
+- Project: CV (The Rolling Scopes School)
+- Developer: Yevhen Khantsev
+- LinkedIn: [Khantsev](https://www.linkedin.com/in/khantsev/)
+- GitHub: [Khantsev](https://github.com/Khantsev)
+- Discord: [@khantsev](https://discord.com/users/981249567339200572)
