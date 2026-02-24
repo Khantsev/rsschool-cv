@@ -1,0 +1,100 @@
+/* 
+  Project: CV (The Rolling Scopes School)
+  Developer: Yevhen Khantsev
+  LinkedIn: https://www.linkedin.com/in/khantsev/
+  GitHub: https://github.com/Khantsev
+  Discord: @khantsev
+*/
+
+/* \ MOBILE VERSION / */
+
+/* Mobile menu */
+.mobile__nav-btn,
+.mobile__nav-checkbox {
+  display: none;
+}
+/* */
+
+/* *--* Media 768px *--* */
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%; /*  14px */
+  }
+
+  /* Container */
+  .main-container {
+    justify-content: center;
+  }
+  /* */
+
+  /* Section */
+  .section {
+    width: 100%;
+  }
+  /* */
+
+  /* *-* Section Profile *-* */
+  .section__profile-block {
+    justify-content: center;
+  }
+  /* *-* */
+
+  /* *-* Mobile navigation *-* */
+  .header__nav {
+    justify-content: left;
+    padding: 1.25rem;
+  }
+  .mobile__nav-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .header__nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .header__nav-item {
+    font-size: 0.85rem;
+  }
+  .mobile__nav-checkbox:checked ~ .header__nav-list {
+    display: flex;
+  }
+  /* *-* */
+
+  /* *-* Section About *-* */
+  .section-paragraph.quote-text {
+    line-height: 1.4;
+  }
+  /* *-* */
+
+  /* Footer */
+  .footer-container {
+    padding: 1.25rem;
+  }
+  .footer {
+    background-color: #f5f5f7;
+  }
+  .footer-line {
+    border-bottom: none;
+  }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+  /* */
+}
+/* *--* */
+
+/* *--* Media 390px *--* */
+@media (max-width: 390px) {
+  /* *-* Section About *-* */
+  .section__about-quote-line {
+    height: 3.5rem;
+  }
+  /* *-* */
+}
+/* *--* */
