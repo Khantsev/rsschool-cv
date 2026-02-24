@@ -1,4 +1,12 @@
-/* \\\\\ DESKTOP ///// */
+/* 
+  Project: CV (The Rolling Scopes School)
+  Developer: Yevhen Khantsev
+  LinkedIn: https://www.linkedin.com/in/khantsev/
+  GitHub: https://github.com/Khantsev
+  Discord: @khantsev
+*/
+
+/* \ DESKTOP VERSION / */
 
 :root {
   --font__global: Helvetica, Arial, sans-serif;
@@ -8,6 +16,7 @@
   --color__global-title: #1d1d1f;
   --color__global-subtitle: #6e6e73;
   --color__global-item-highlight: #6e6e73;
+  --color__footer: #6e6e73;
 }
 
 * {
@@ -42,7 +51,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 2.12rem;
-  padding: 2.12rem 1.25rem 0;
+  padding: 2.12rem 1.25rem;
 }
 /* */
 
@@ -60,9 +69,10 @@ body {
   color: var(--color__global-title);
 }
 .section-paragraph {
-  margin: 1.18rem 0;
+  margin: 1.18rem 0 0;
   font-family: var(--font__global);
   font-size: 1.25rem;
+  line-height: 1.4;
   font-weight: 400;
 }
 .section-list {
@@ -109,9 +119,9 @@ body {
   display: flex;
   gap: 1.25rem;
   align-items: center;
+  height: 2.75rem;
   margin: 0;
   padding: 0;
-  height: 2.75rem;
 }
 .header__nav-item {
   font-family: var(--font__global);
@@ -122,7 +132,7 @@ body {
 .header__nav-link {
   color: var(--color__nav-link);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 .header__nav-link:hover {
   color: var(--hover__nav-link);
@@ -172,6 +182,9 @@ body {
   background-color: #f5f5f7;
   border-radius: 28px;
 }
+.section__contact-paragraph {
+  margin: 1.18rem 0;
+}
 /* Dropdown list */
 .section__contact-dropdown-title {
   font-family: var(--font__global);
@@ -201,10 +214,6 @@ body {
   font-family: var(--font__global);
   font-size: 4rem;
   font-weight: 600;
-}
-.section__about-paragraph {
-  margin: 1.18rem 0 0;
-  line-height: 1.4;
 }
 /* Quote */
 .section__about-quote {
@@ -248,4 +257,46 @@ body {
   color: var(--color__global-item-highlight);
 }
 /* *-* */
+/* *--* */
+
+/* *--* Footer *--* */
+.footer-line {
+  border-bottom: 1px #f5f5f7 solid;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.copyright,
+.footer__banner-link {
+  font-family: var(--font__global);
+  font-size: 0.87rem;
+  color: var(--color__footer);
+}
+.footer__banner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer__banner-link {
+  text-decoration: none;
+}
+.footer__banner-link-box {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+  transition: filter 0.3s ease-in-out;
+}
+.github__banner-img {
+  width: 3rem;
+}
+.rs-school__banner-img {
+  width: 4rem;
+}
+.footer__banner-link-link:hover,
+.footer__banner-link-box:hover {
+  filter: brightness(0.5);
+}
 /* *--* */

@@ -1,4 +1,12 @@
-/* \\\\\ MOBILE ///// */
+/* 
+  Project: CV (The Rolling Scopes School)
+  Developer: Yevhen Khantsev
+  LinkedIn: https://www.linkedin.com/in/khantsev/
+  GitHub: https://github.com/Khantsev
+  Discord: @khantsev
+*/
+
+/* \ MOBILE VERSION / */
 
 /* Mobile menu */
 .mobile__nav-btn,
@@ -59,6 +67,25 @@
     line-height: 1.4;
   }
   /* *-* */
+
+  /* Footer */
+  .footer-container {
+    padding: 1.25rem;
+  }
+  .footer {
+    background-color: #f5f5f7;
+  }
+  .footer-line {
+    border-bottom: none;
+  }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+  /* */
 }
 /* *--* */
 
